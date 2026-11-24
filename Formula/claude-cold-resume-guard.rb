@@ -2,7 +2,7 @@ class ClaudeColdResumeGuard < Formula
   desc "Prevent cold-cache token spikes and quota exhaustion in Claude Code"
   homepage "https://l2cache.app/claude-pro-weekly-limit"
   url "https://github.com/amvotech/claude-cold-resume-guard/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "1dfe2d201f4074ec3522693fe7828e371ad068864256a7e3717d18f47229a5d8"
+  sha256 "1235731f163aefb09311542c0feeb982fd9d92efc358fd0d3db12839ebf57c3f"
   license "MIT"
 
   def install
