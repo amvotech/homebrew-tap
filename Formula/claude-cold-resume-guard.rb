@@ -5,14 +5,12 @@ class ClaudeColdResumeGuard < Formula
   sha256 "1dfe2d201f4074ec3522693fe7828e371ad068864256a7e3717d18f47229a5d8"
   license "MIT"
 
-  depends_on "python@3.11"
-
   def install
     bin.install "guard.py" => "cold-resume-guard"
     bin.install_symlink bin/"cold-resume-guard" => "claude-guard"
   end
 
   test do
-    system "#{bin}/cold-resume-guard"
+    system "#{bin}/cold-resume-guard", "--check-only"
   end
 end
